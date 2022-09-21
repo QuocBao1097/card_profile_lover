@@ -1,0 +1,131 @@
+/* reset css */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+:root{ 
+  --primary__color: white;
+}
+
+
+body {
+  background: linear-gradient(to right, #4daf54, #3d8880);
+  height: 100hv;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 90px;
+}
+
+.card {
+  height: 400px;
+  width: 300px;
+  background: #242628;
+  border-radius: 10px;
+  margin: 100px auto;
+  overflow: hidden;
+}
+
+.card__img {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 2px rgb(236, 104, 10) solid;
+  margin: 0 auto;
+  transform: translateY(20px);
+  cursor: pointer;
+  transition: 0.5s ease;
+  overflow: hidden;          /* bao phủ hoàn toàn với khung hình */
+}
+
+.card__img:hover {  
+  transform: unset;
+  border: none;
+  width: 100%;
+  height: 100%;
+  border-radius: unset;
+  transition: 0.4s;
+}
+
+.card img {
+  object-position: center;   /* ảnh lúc nào cũng được căn ra giữa  */
+  object-fit: cover;        /* ảnh lúc nào cũng được lấy hết */
+  width: 100%;
+  height: 100%;
+}
+
+.card__name,
+.card__fullstask {
+  font-family: serif;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+.card__name {
+  color: var(--primary__color);
+  margin-top: 37px;
+}
+
+.card__fullstask {
+  margin: 17px 0px;
+  font-size: 25px;
+  color: rgb(230, 102, 79);
+}
+
+.card__icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__icons a {
+  font-size: 22px;
+  color: var(--primary__color);
+  margin: 0 auto;
+  margin-top: 17px;
+  transition: transform 0.4s ease;
+}
+
+.card__icons a:hover {
+  color: tomato;
+  transform: scale(0.8);
+}
+
+.card__contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__contact a {
+  color: var(--primary__color);
+  text-decoration: none;
+}
+
+.card__contact button {
+  width: 140px;
+  height: 50px;
+  background: transparent;
+  color: var(--primary__color);
+  border-radius: 9px;
+  border: 1px solid rgb(136, 73, 50);
+  margin-top: 26px;
+  font-size: 20px;
+  font-weight: 300;
+  cursor: pointer;
+  transition: background 0.3s;
+
+}
+
+.card__contact button:hover {
+  background: rgb(209, 107, 70);
+}
+
+/* Heart  */
+.card__heart img {
+  width: 303px;
+  height: 303px;
+  margin-top: 140px;
+}
